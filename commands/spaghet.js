@@ -2,12 +2,12 @@ const Discord = require('discord.js');
 
 module.exports.run = async (client, message, args) => {
   let embed = new Discord.RichEmbed()
-  .setImage('https://media.giphy.com/media/ZcYe7jWTLRzkQ/giphy.gif');
+  .setImage('http://i0.kym-cdn.com/photos/images/newsfeed/001/332/955/58e.gif');
 
   return message.channel.send(embed);
 };
 
 module.exports.help = {
-  name: 'gay',
-  description: 'Gay.'
+  name: 'spaghet',
+  description: 'SOMEBODY TOUCHA MY SPAGHET'
 };
