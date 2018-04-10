@@ -2,12 +2,12 @@ const Discord = require('discord.js');
 
 module.exports.run = async (client, message, args) => {
   let embed = new Discord.RichEmbed()
-  .setImage('http://i0.kym-cdn.com/photos/images/newsfeed/001/332/955/58e.gif');
+  .setImage('https://media1.tenor.com/images/4503a9e149b20fbf6b6af491220b5000/tenor.gif?itemid=9670656');
 
   return message.channel.send(embed);
 };
 
 module.exports.help = {
-  name: 'spaghet',
+  name: 'ateveryone',
   description: ''
 };
