@@ -10,11 +10,11 @@ If you are having troubles and/or issues setting up the bot, please leave an iss
 - dab
 - discord
 - gay
-- jsfaq [used to list frequently asked questions for those who are getting started in JavaScript]
-- jsfirst [used to list information for those who are getting started in JavaScript]
+- jsfaq `[used to list frequently asked questions for those who are getting started in JavaScript]`
+- jsfirst `[used to list information for those who are getting started in JavaScript]`
 - no
 - spaghet
-- tags [used to list all these tags]
+- tags `[used to list all these tags]`
 - thinking
 - triggered
 - welp
