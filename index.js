@@ -17,7 +17,8 @@ fs.readdir('./commands/', (err, files) => {
     let props = require(`./commands/${files}`);
     console.log(`${files} has been loaded!`);
     client.commands.set(props.help.name, props);
-  })});
+  })
+});
 
   // Bot Bootup Event
   client.on('ready', async () => {
@@ -41,7 +42,6 @@ client.on('message', async message => {
 
     let commandfile = client.commands.get(cmd.slice(prefix.length));
     if (commandfile) commandfile.run(client, message, args);
-
 });
 
 client.login(token.token);
