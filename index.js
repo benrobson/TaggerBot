@@ -19,7 +19,7 @@ fs.readdir('./commands/', (err, files) => {
   })
 });
 
-  // Bot Bootup Event
+// Bot Bootup Event
 client.on('ready', async () => {
   let pluralnonpluralservers = (client.guilds.size > 1) ? 'Servers' : 'Server';
   let pluralnonpluralusers = (client.users.size > 1) ? 'Users' : 'User';
