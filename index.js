@@ -20,14 +20,22 @@ fs.readdir('./commands/', (err, files) => {
 });
 
   // Bot Bootup Event
-  client.on('ready', async () => {
-    let pluralnonpluralservers = (client.guilds.size > 1) ? 'Servers' : 'Server';
-    let pluralnonpluralusers = (client.users.size > 1) ? 'Users' : 'User';
+client.on('ready', async () => {
+  let pluralnonpluralservers = (client.guilds.size > 1) ? 'Servers' : 'Server';
+  let pluralnonpluralusers = (client.users.size > 1) ? 'Users' : 'User';
 
-    console.log(`${client.user.username} is online and is operating on ${client.guilds.size} ${pluralnonpluralservers} for ${client.users.size} ${pluralnonpluralusers}.`);
-    client.user.setActivity(`${client.guilds.size} ${pluralnonpluralservers} // ${client.users.size} ${pluralnonpluralusers}`, {type: 'PLAYING'});
-    return;
-  });
+  console.log(`${client.user.username} is online and is operating on ${client.guilds.size} ${pluralnonpluralservers} for ${client.users.size} ${pluralnonpluralusers}.`);
+
+  function setActivity() {
+    const Gameinfo = ['Source: http://bit.ly/TaggerBotSource', 'Developer: shadowolf#9212', 'Discord: http://bit.ly/mancavediscord', 'Invite: http://bit.ly/invitetaggerbot', `Running on ${client.guilds.size} ${pluralnonpluralservers}`, `Running for ${client.users.size} ${pluralnonpluralusers}`, `Use ${config.prefix}tags`];
+    const info = Gameinfo[Math.floor(Math.random() * Gameinfo.length)];
+
+    client.user.setActivity(info);
+    console.log(`[Console] Activity set to (${info})`);
+  };
+
+  setInterval(setActivity, 120000);
+});
 
 // Message Handler
 client.on('message', async message => {
