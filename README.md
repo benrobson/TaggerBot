@@ -1,4 +1,9 @@
 # TaggerBot
+
+# This repo has been discontinued
+All of the work of TaggerBot has been discontinued. If you would like to continue to use this, please use the `tag` command on the [Rodney](https://github.com/shadowolfyt/Rodney) bot.
+All of the work of the TaggerBot has been merged into the Rodney Bot.
+
 ### Introduction
 TaggerBot is basically commands with images. You can use this bot with these tags at anytime in any situation!
 
